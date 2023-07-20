@@ -1,13 +1,17 @@
 body {
   /* background : linear-gradient(135deg , #00feba , #5b548a);  */
-  background: pink;
+  background: linear-gradient(to bottom right, #ff6b6b, #3b82f6);
+  /* background: pink; */
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: none;  
+  /* curson none hides default cursor */
+  
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   
 }
 
@@ -70,3 +74,17 @@ box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
   width: 100%;
 }
 
+
+
+/* mouse cursor styling */
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
